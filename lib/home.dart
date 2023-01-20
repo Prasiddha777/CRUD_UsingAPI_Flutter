@@ -17,6 +17,7 @@ class _HomePageState extends State<HomePage> {
         centerTitle: true,
       ),
       floatingActionButton: FloatingActionButton.extended(
+        backgroundColor: Colors.red,
         onPressed: () {
           navigateToAddPage();
         },

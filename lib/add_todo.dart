@@ -14,6 +14,34 @@ class _AddToDoPageState extends State<AddToDoPage> {
       appBar: AppBar(
         title: const Text('Add ToDo'),
       ),
+      body: ListView(
+        padding: const EdgeInsets.all(20),
+        children: [
+          const TextField(
+            decoration: InputDecoration(
+              hintText: 'Title',
+            ),
+          ),
+          const TextField(
+            decoration: InputDecoration(
+              hintText: 'Descripition',
+            ),
+            keyboardType: TextInputType.multiline,
+            maxLines: 7,
+            minLines: 5,
+          ),
+          const SizedBox(
+            height: 25,
+          ),
+          ElevatedButton(
+            onPressed: () {},
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.red,
+            ),
+            child: const Text('Submit'),
+          ),
+        ],
+      ),
     );
   }
 }
